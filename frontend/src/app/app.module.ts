@@ -11,7 +11,10 @@ import { RegisterTeacherComponent } from './home/register-teacher/register-teach
 import { RegisterCourseComponent } from './home/register-course/register-course.component';
 import { RegisterMatterComponent } from './home/register-matter/register-matter.component';
 
-import { UserService } from './services/user.service';
+import { TeacherService } from './services/teacher.service';
+import { StudentService } from './services/student.service';
+import { MatterService } from './services/matter.service';
+import { CourseService } from './services/course.service';
 import { RoleService } from './services/role.service';
 import { BoardService } from './services/board.service';
 import { TokenInterceptorService } from './services/token-interceptor.service';
@@ -52,7 +55,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatSnackBarModule
   ],
   providers: [
-    UserService,
+    TeacherService,
+    StudentService,
+    CourseService,
+    MatterService,
     RoleService,
     TokenInterceptorService,
     BoardService,

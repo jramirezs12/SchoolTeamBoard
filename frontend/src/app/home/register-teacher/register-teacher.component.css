@@ -16,7 +16,7 @@
   align-items: center;
   padding: 100px 16px 0px;
 }
-mat-card-title {
+.mat-card-title {
   text-align: center;
 }
 .colorButton {
